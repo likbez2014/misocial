@@ -1,0 +1,103 @@
+
+.header-background
+    background: linear-gradient(-60deg, rgba(0,47,74,0.6) 0%, rgba(143,196,215,0.6) 100%),url(../img/header_background.jpg)
+.wrapper
+    padding: 0 50px
+.header-wrapper
+    padding-top: 65px
+    padding-bottom: 290px
+    position: relative
+    .arrow
+        &::before
+        content: ""
+        position: absolute
+        width: 65px
+        height: 65px
+        bottom: 50px
+        left: 50%
+        background: #fff url(../img/arrow.png) no-repeat center
+        border-radius: 50%
+        transform: translate(-50%)
+.header
+    padding-bottom: 180px
+    display: flex
+    justify-content: space-between
+    a 
+        text-decoration: none
+.menu
+    display: flex
+.main-menu
+    // display: flex
+    // justify-content: space-between
+    // width: 560px
+    padding: 0
+    list-style: none
+    li
+        display: inline-block
+    a
+        padding: 0 30px
+        position: relative
+        font-size: 16px
+        line-height: 19px
+        color: #fff
+        font-weight: 500
+        font-family: "Maven Pro"
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 2px
+            bottom: -15px
+            left: 0
+            background-color: #fff
+            
+
+.button
+    margin-left: 60px
+    a
+        // position: relative
+        padding: 18px 27px
+        border: 1px solid #fff
+        border-radius: 25px
+        font-size: 12px
+        letter-spacing: 1px
+        color: #fff
+        font-weight: 700
+        text-transform: uppercase
+.textHeader
+    text-align: center
+    p
+        display: inline-block
+        max-width: 385px
+        font-size: 16px
+        line-height: 28px
+        color: #ffffff
+    
+h4
+    position: relative
+    display: inline-block
+    font-size: 14px
+    letter-spacing: 1px
+    color: #fff
+    font-weight: 700
+    &::before,
+    &::after
+        content: ""
+        position: absolute
+        width: 25px
+        height: 1px
+        top: 8px
+        background-color: #fff
+    &::before
+        left: -40px
+    &::after
+        right: -40px
+h1
+    margin: 0
+    font-size: 86px
+    letter-spacing: -3px
+    color: #fff
+    font-weight: 500
+        
+        
+            
