@@ -1,23 +1,36 @@
 
 .header-background
-    background: linear-gradient(-60deg, rgba(0,47,74,0.6) 0%, rgba(143,196,215,0.6) 100%),url(../img/header_background.jpg)
+    background: linear-gradient(-60deg, rgba(135,211,205,0.8) 0%, rgba(109,69,225,0.8) 100%),url(../img/header_background.jpg)
+    background-position: center
+    // background-blend-mode: lighten
+    background-size: cover
 .wrapper
     padding: 0 50px
 .header-wrapper
     padding-top: 65px
     padding-bottom: 290px
     position: relative
-    .arrow
-        &::before
-        content: ""
-        position: absolute
+.arrow
+    a
+        position: absolute 
         width: 65px
         height: 65px
         bottom: 50px
         left: 50%
-        background: #fff url(../img/arrow.png) no-repeat center
         border-radius: 50%
+        background: #fff
         transform: translate(-50%)
+        transition: background 0.8s ease
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            background: url(../img/arrow.png) no-repeat center
+        &:hover
+            background: #6e45e2
+            
+            
 .header
     padding-bottom: 180px
     display: flex
@@ -50,7 +63,13 @@
             bottom: -15px
             left: 0
             background-color: #fff
-            
+            transition: transform 1s ease
+            transform: scaleX(0)
+            // transform: scaleX(1)
+        &:hover:before
+            // background-color: #000
+            // width: 100%
+            transform: scaleX(1)
 
 .button
     margin-left: 60px
@@ -64,6 +83,11 @@
         color: #fff
         font-weight: 700
         text-transform: uppercase
+        transition: background-color 0.5s ease, border-color 1s ease
+        &:hover
+            border-color: #6e45e2
+            background-color: #6e45e2
+             
 .textHeader
     text-align: center
     p

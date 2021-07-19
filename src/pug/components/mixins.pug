@@ -1,16 +1,32 @@
+//- mixin головної менюшки
 mixin menu (items)
     each item in items 
         li 
             a(href=item.url) #{item.name}
-mixin card (items)
-    each item in items 
-        figure.card 
-            figcaption 
-                img(src=item.src, alt=item.alt)
-                p.personal Personal
-                p.price
-                    strong #{item.price}
-                    |/month
-                p.description #{item.description}
-                p.button 
-                    a(href=item.href) select plan
+
+//- mixin  який видає всі карточки з масиву обєктів
+//- mixin card (items)
+//-     each item in items 
+//-         figure.card 
+//-             figcaption 
+//-                 img(src=item.src, alt=item.alt)
+//-                 p.personal Personal
+//-                 p.price
+//-                     strong #{item.price}
+//-                     |/month
+//-                 p.description #{item.description}
+//-                 p.button 
+//-                     a(href=item.href) select plan
+
+//- mixin  який видаватиме окрему карточку з обєкту обєктів
+mixin card (item)
+    figure.card 
+        figcaption 
+            img(src=item.src, alt=item.alt)
+            p.personal Personal
+            p.price
+                strong #{item.price}
+                |/month
+            p.description #{item.description}
+            p.button 
+                a(href=item.href) select plan
