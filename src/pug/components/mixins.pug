@@ -26,7 +26,7 @@ mixin card (item)
             p.personal Personal
             p.price
                 strong #{item.price}
-                |/month
+                    span /month
             p.description #{item.description}
-            p.button 
-                a(href=item.href) select plan
+            .tac
+                a.button(href=item.href) select plan

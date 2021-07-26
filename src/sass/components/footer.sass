@@ -1,0 +1,54 @@
+.footer-background
+    background: linear-gradient(-60deg, rgba(135,211,205,0.8) 0%, rgba(109,69,225,0.8) 80%),url(../img/Map.png) no-repeat
+    background-position: center
+    background-blend-mode: darken
+    .wrapper
+        padding: 180px
+.textFooter
+    text-align: center
+    color: #fff
+    h4
+        margin: 0
+        padding-bottom: 20px
+        position: relative
+        display: inline-block
+        &::before,
+        &::after
+            content: ""
+            position: absolute
+            width: 25px
+            height: 1px
+            top: 8px
+            background-color: #fff
+        &::before
+            left: -40px
+        &::after
+            right: -40px
+    h3
+        padding-bottom: 20px
+        margin: 0
+        font-size: 60px
+        letter-spacing: -2px
+        color: #fff
+        font-weight: 500
+    .button
+        +btn(true)
+    //     margin: 18px 5px
+    //     display: inline
+    // a
+    //     padding: 18px 32px
+    //     display: inline-block
+    //     width: 8.5%
+    //     text-decoration: none
+    //     color: #c2c9db
+    //     background-color: #fff
+    //     transition: background-color 0.5s ease, border-color 1s ease
+    //     &:hover
+    //         color: #fff
+    //         background-color: #6e45e2
+.footer
+    +mainMenu
+    .footer-menu
+        color: #756edc
+    // display: flex
+       
