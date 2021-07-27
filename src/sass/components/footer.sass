@@ -32,7 +32,8 @@
         color: #fff
         font-weight: 500
     .button
-        +btn(true)
+        +btn("grey", true)
+        margin: 0 5px
     //     margin: 18px 5px
     //     display: inline
     // a
@@ -48,7 +49,24 @@
     //         background-color: #6e45e2
 .footer
     +mainMenu
-    .footer-menu
-        color: #756edc
-    // display: flex
+    padding-top: 50px
+    padding-bottom: 30px
+    border-bottom: 1px solid #f1f1f2
+    .main-menu
+        a
+            font-size: 16px
+            color: #6a6a77
+            font-weight: 500
+            &:hover
+                color: #756edc
+            &::before
+                background-color: #756edc
+.footer-menu
+    .button
+        +btn("grey",false)
+.footer-social
+    margin: 0
+    padding-top: 30px
+    padding-bottom: 25px
+
        

@@ -3,16 +3,33 @@
         .textFooter 
             h4 SOCAL MARKETING & ANALYTICS
             h3 Take control of your data
-            p.button
-                a(href="#") get started
-            p.button 
-                a(href="#") explore features 
-.footer.wrapper
-    .logo
-        img(src="img/Logo_white.png", alt="logo") 
-    .menu.footer-menu
-        ul.main-menu 
-            +menu(menu)
-        p.button 
-            a(href="#") get started
-p &copy; 2017 Mass Impressions & Tranmautritam. Make the right impression.
+            a.button(href="#") get started
+            a.button(href="#") explore features 
+.wrapper
+    .footer
+        .logo
+            img(src="img/Logo_white.png", alt="logo") 
+        .menu.footer-menu
+            ul.main-menu 
+                +menu(menu)
+            a.button(href="#") get started
+    .footer-social
+        p &copy; 2017 Mass Impressions & Tranmautritam. Make the right impression.
+        .social
+            ul
+                li
+                    a.fb(href="#")
+                        svg.icon 
+                            use(xlink:href="#fb")
+                li
+                    a.tw(href="#")
+                        svg.icon 
+                            use(xlink:href="#tw") 
+                li
+                    a.gl(href="#")
+                        svg.icon  
+                            use(xlink:href="#gl") 
+                li
+                    a.ins(href="#")
+                        svg.icon  
+                            use(xlink:href="#ins") 
