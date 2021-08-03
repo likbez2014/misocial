@@ -3,7 +3,13 @@
     background-position: center
     background-blend-mode: darken
     .wrapper
-        padding: 180px
+        padding-top: 180px
+        padding-bottom: 180px
+        // padding: 180px
+        @media screen and ( max-width: 480px )
+            padding-top: 20px
+            padding-bottom: 10px
+            
 .textFooter
     text-align: center
     color: #fff
@@ -31,22 +37,15 @@
         letter-spacing: -2px
         color: #fff
         font-weight: 500
+        @media screen and ( max-width: 480px )
+            font-size: 30px
+            
     .button
         +btn("grey", true)
         margin: 0 5px
-    //     margin: 18px 5px
-    //     display: inline
-    // a
-    //     padding: 18px 32px
-    //     display: inline-block
-    //     width: 8.5%
-    //     text-decoration: none
-    //     color: #c2c9db
-    //     background-color: #fff
-    //     transition: background-color 0.5s ease, border-color 1s ease
-    //     &:hover
-    //         color: #fff
-    //         background-color: #6e45e2
+        @media screen and ( max-width: 480px )
+            margin-bottom: 10px
+            
 .footer
     +mainMenu
     padding-top: 50px
@@ -68,5 +67,42 @@
     margin: 0
     padding-top: 30px
     padding-bottom: 25px
+    display: flex
+    justify-content: space-between
+    font-size: 14px
+    color: #6a6a77
+    font-weight: 500
+    @media screen and ( max-width: 480px )
+        flex-wrap: wrap
+        flex-direction: column-reverse
+        p
+            display: block
+            text-align: center
+        
+.social
+    padding-top: 15px
+    @media screen and ( max-width: 480px )
+        text-align: center
+        
+    ul
+        margin: 0
+        padding: 0
+        li
+            padding-left: 10px
+            display: inline
+            @media screen and ( max-width: 480px )
+                padding: 0 10px
+
+.icon
+    width: 20px
+    height: 16px
+    color: #b4b4bb
+    transform: scale(1)
+        
+    &:hover
+        transform: scale(2)
+        transform-origin: bottom
+        color: #756edc
+        
 
        

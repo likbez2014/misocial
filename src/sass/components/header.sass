@@ -10,6 +10,9 @@
     padding-top: 65px
     padding-bottom: 290px
     position: relative
+    @media screen and ( max-width: 480px )
+        padding-bottom: 120px
+        
 .arrow
     a
         position: absolute 
@@ -29,21 +32,27 @@
             background: url(../img/arrow.png) no-repeat center
         &:hover
             background: #6e45e2
-
-            
 .header
     padding-bottom: 180px
+    @media screen and ( max-width: 480px )
+        padding-bottom: 30px
+        
     +mainMenu
 .menu
     display: flex
+    @media screen and ( max-width: 480px )
+        flex-direction: column
+        
 .main-menu
-    // display: flex
-    // justify-content: space-between
-    // width: 560px
     padding: 0
     list-style: none
     li
         display: inline-block
+        @media screen and ( max-width: 480px )
+            display: block
+            text-align: center
+            padding-bottom: 15px
+            
     a
         padding: 0 30px
         position: relative
@@ -60,8 +69,14 @@
             left: 0
             transition: transform 1s ease
             transform: scaleX(0)
+            @media screen and ( max-width: 480px )
+                bottom: -5px
+                
         &:hover:before
             transform: scaleX(1)
+            margin: 0
+            
+        
 .header-menu
     a
         color: #fff
@@ -69,6 +84,7 @@
             background-color: #fff
     .button
         +btn("white", false)
+        
 
 .textHeader
     text-align: center
