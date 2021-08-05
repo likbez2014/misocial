@@ -12,7 +12,8 @@
     position: relative
     @media screen and ( max-width: 480px )
         padding-bottom: 120px
-        
+    @media screen and ( max-width: 768px )
+        padding-bottom: 120px
 .arrow
     a
         position: absolute 
@@ -35,8 +36,9 @@
 .header
     padding-bottom: 180px
     @media screen and ( max-width: 480px )
+        padding-bottom: 30px    
+    @media screen and ( max-width: 768px )
         padding-bottom: 30px
-        
     +mainMenu
 .menu
     display: flex
@@ -71,7 +73,10 @@
             transform: scaleX(0)
             @media screen and ( max-width: 480px )
                 bottom: -5px
-                
+        @media screen and ( max-width: 768px )
+            padding: 0 10px
+        @media screen and ( max-width: 1024px  )
+            padding: 0 15px
         &:hover:before
             transform: scaleX(1)
             margin: 0
